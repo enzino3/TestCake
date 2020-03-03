@@ -3,7 +3,7 @@
 
     <string name="selectorder">Select Order</string>
     <string name="square">Square</string>
-    <string name="triangle">Triangle</string>
+    <string name="rectangle">Rectangle</string>
     <string name="circle">Circle</string>
 
     <string name="selectflavor">Flavor</string>

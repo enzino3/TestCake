@@ -17,7 +17,6 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:src="@drawable/goldie">
 
         </ImageView>
@@ -100,15 +99,17 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+                    android:text="@string/square"
                     android:id="@+id/rbtn_square"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_weight="1"
+                    android:text="@string/circle"
                     android:id="@+id/rbtn_circle"/>
 
                 <RadioButton
@@ -116,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="35dp"
                     android:layout_weight="1"
+                    android:text="@string/rectangle"
                     android:id="@+id/rbtn_rectangle"/>
 
             </RadioGroup>
@@ -134,7 +136,7 @@
                 android:layout_height="50dp"
                 android:text="@string/selectflavor"
                 android:gravity="center"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:background="#ffcf00"
                 android:textColor="#000"
 

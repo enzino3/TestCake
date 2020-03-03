@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -21,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinner_toppings;
     Spinner spinner_flavor;
 
-    String a,b,c;
+    RadioButton rshapebtn;
+    RadioGroup rgroup;
+
+    String a,b,c,d;
 
     EditText txt_message;
 
@@ -30,14 +34,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        rbtn_square = findViewById(R.id.rbtn_square);
-//        rbtn_circle = findViewById(R.id.rbtn_circle);
-//        rbtn_rectangle = findViewById(R.id.rbtn_rectangle);
-
         txt_message = findViewById(R.id.txt_message);
         addItemsOnSpinner1();
         addItemsOnSpinner2();
-
     }
 
     public void addItemsOnSpinner2() {
@@ -75,14 +74,20 @@ public class MainActivity extends AppCompatActivity {
         spinner_toppings = findViewById(R.id.spinner_toppings);
         txt_message = findViewById(R.id.txt_message);
 
+        rgroup = findViewById(R.id.radiotoppingsGroup);
+
+        int selectedId = rgroup.getCheckedRadioButtonId();
+
+        rshapebtn = findViewById(selectedId);
+
         a = spinner_flavor.getSelectedItem().toString();
         b = spinner_toppings.getSelectedItem().toString();
         c = txt_message.getText().toString();
-
+        d = rshapebtn.getText().toString();
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-        alertDialogBuilder.setMessage("Flavor: " + a + "\nToppings: " + b + "\nMessage: " + c + "\n" );
-        alertDialogBuilder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setMessage("| Cake Detail |" + "\nShape: " + d + "\nFlavor: " + a + "\nToppings: " + b + "\nMessage: " + c + "\n" );
+        alertDialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
