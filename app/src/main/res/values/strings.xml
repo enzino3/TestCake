@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cake Ordering</string>
+
+    <string name="selectorder">Select Order</string>
+    <string name="square">Square</string>
+    <string name="triangle">Triangle</string>
+    <string name="circle">Circle</string>
+
+    <string name="selectflavor">Flavor</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="caramel">Caramel</string>
+    <string name="coffee">Coffee</string>
+    <string name="ube">Ube</string>
+    <string name="blackforest">Black Forest</string>
+    <string name="strawberry">Strawberry</string>
+
+    <string name="selecttoppings">Toppings</string>
+    <string name="kisses">Kisses</string>
+    <string name="oreo">Oreo</string>
+    <string name="velvet">Velvet</string>
+
+    <string name="txt_submit">Submit</string>
+    <string name="hint_txt">Message here..</string>
+
+</resources>
