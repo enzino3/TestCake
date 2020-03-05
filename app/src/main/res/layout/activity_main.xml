@@ -99,7 +99,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:layout_weight="1"
                     android:text="@string/square"
                     android:id="@+id/rbtn_square"/>
@@ -107,7 +107,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="40dp"
                     android:layout_weight="1"
                     android:text="@string/circle"
                     android:id="@+id/rbtn_circle"/>
@@ -115,7 +115,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="40dp"
                     android:layout_weight="1"
                     android:text="@string/rectangle"
                     android:id="@+id/rbtn_rectangle"/>
@@ -152,10 +152,10 @@
             <Spinner
                 android:id="@+id/spinner_flavor"
                 android:layout_width="match_parent"
-                android:layout_alignParentEnd="true"
-                android:textAlignment="center"
                 android:layout_height="50dp"
-                />
+                android:layout_alignParentEnd="true"
+                android:background="#F1E99D"
+                android:textAlignment="center" />
 
         </LinearLayout>
 
@@ -169,11 +169,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/selecttoppings"
-            android:gravity="center"
-            android:textSize="30dp"
             android:background="#ffcf00"
+            android:gravity="center"
+            android:text="@string/selecttoppings"
             android:textColor="#000"
+            android:textSize="20dp"
 
             />
 
@@ -187,10 +187,10 @@
         <Spinner
             android:id="@+id/spinner_toppings"
             android:layout_width="match_parent"
-            android:layout_alignParentEnd="true"
-            android:textAlignment="center"
             android:layout_height="50dp"
-            />
+            android:layout_alignParentEnd="true"
+            android:background="#FFF1E99D"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -201,12 +201,12 @@
         android:layout_weight="1">
 
         <EditText
+            android:id="@+id/txt_message"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#f0f0f0"
             android:gravity="center"
-            android:id="@+id/txt_message"
-            android:hint="@string/hint_txt"
-            />
+            android:hint="@string/hint_txt" />
 
     </RelativeLayout>
 
